@@ -21,4 +21,28 @@
   ul > li {
     list-style: inside;
   }
+
+  .layout__logo {
+    @apply text-blue text-2xl cursor-pointer transition-all;
+  }
+
+  .layout__feedback {
+    @apply text-sm hidden md:flex items-center justify-center border border-primary hover:border-blue hover:text-blue border-solid py-1.5 px-4 cursor-pointer transition-all;
+  }
+
+  .layout__contacts {
+    @apply flex items-center gap-1.5 cursor-pointer pl-5 bg-contain bg-left bg-no-repeat transition-all hover:text-blue;
+  }
+
+  .layout__contacts--mail {
+    @apply bg-mail hover:bg-mail-hover;
+  }
+
+  .layout__contacts--phone {
+    @apply bg-phone hover:bg-phone-hover;
+  }
+
+  .layout__socials {
+    @apply rounded-[50%] cursor-pointer bg-red;
+  }
 }

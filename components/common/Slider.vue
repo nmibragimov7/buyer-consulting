@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3 class="text-3xl text-center font-semibold mb-8">Заказывайте брендовые одежды без переплаты</h3>
+    <h3 class="text-xl md:text-3xl text-center font-semibold mb-8 px-2.5 md:px-0">Заказывайте брендовые одежды без переплаты</h3>
     <div class="container mx-auto overflow-hidden mb-10">
       <client-only>
         <agile
@@ -9,7 +9,7 @@
           :autoplay="true"
           :autoplay-speed="3000"
           :nav-buttons="false"
-          :slides-to-show="6"
+          :slides-to-show="innerWidth < 768 ? 2 : 6"
         >
           <div v-for="(image, idx) of images"
                :key="idx"
@@ -78,8 +78,12 @@ export default {
           title: "adidas",
           url: '/svg/adidas.svg'
         }
-      ]
+      ],
+      innerWidth: 420
     }
+  },
+  mounted() {
+    this.innerWidth = window.innerWidth
   }
 }
 </script>

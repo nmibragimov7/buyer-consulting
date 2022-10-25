@@ -1,8 +1,8 @@
 <template>
   <div class="promo__wrap">
     <div class="promo__form shadow-box-dark">
-      <p class="text-dark text-2xl mb-6">Оставьте свои контакты и мы обязательно свяжемся с Вами!</p>
-      <label class="flex flex-col mb-4">
+      <p class="text-dark text-lg md:text-2xl mb-4 md:mb-6">Оставьте свои контакты и мы обязательно свяжемся с Вами!</p>
+      <label class="flex flex-col mb-2 md:mb-4">
         <span class="promo__label">Имя</span>
         <span class="py-3 px-4 shadow-box-inset">
           <input
@@ -12,7 +12,7 @@
           />
         </span>
       </label>
-      <label class="flex flex-col mb-6">
+      <label class="flex flex-col mb-4 md:mb-6">
         <span class="promo__label">Телефон</span>
         <span class="py-3 px-4 shadow-box-inset">
           <the-mask
@@ -62,10 +62,10 @@ export default {
 .promo {
 
   &__wrap {
-    @apply h-[50vh] container relative mx-auto bg-map bg-contain bg-center bg-no-repeat;
+    @apply h-[50vh] container relative mx-auto bg-map bg-contain bg-top md:bg-center bg-no-repeat;
   }
   &__form {
-    @apply absolute translate-x-[-50%] left-1/2 top-1/2 rounded-3xl bg-white p-10 text-center max-w-md;
+    @apply mx-2.5 md:mx-0 absolute md:translate-x-[-50%] md:left-1/2 top-[30%] md:top-1/2 rounded-3xl bg-white p-5 md:p-10 text-center md:max-w-md;
   }
   &__label {
     @apply text-red text-sm text-left mb-1;
