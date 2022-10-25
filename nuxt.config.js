@@ -1,3 +1,6 @@
+import ru from './locale/ru.json'
+import kz from './locale/kz.json'
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -17,11 +20,13 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-  ],
+  css: ['@/assets/css/main.css', '@/assets/font/font.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: '~/plugins/vueTheMask.js', mode: 'client' },
+    { src: '~/plugins/vueToast.js', mode: 'client' },
+    { src: '~/plugins/vueSwiper.js', mode: 'client' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -39,6 +44,18 @@ export default {
     '@nuxtjs/axios',
   ],
 
+  i18n: {
+    locales: ['ru', 'kz'],
+    defaultLocale: 'ru',
+    vueI18n: {
+      fallbackLocale: 'ru',
+      messages: {
+        ru,
+        kz,
+      },
+    },
+  },
+
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
@@ -47,5 +64,12 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
+    },
+    transpile: ['vue-agile'],
+  },
 }
