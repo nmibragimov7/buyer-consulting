@@ -2,6 +2,7 @@ import ru from './locale/ru.json'
 import kz from './locale/kz.json'
 
 export default {
+  // ssr: false,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'buyer-consulting',

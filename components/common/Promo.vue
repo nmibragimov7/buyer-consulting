@@ -15,12 +15,14 @@
       <label class="flex flex-col mb-4 md:mb-6">
         <span class="promo__label">Телефон</span>
         <span class="py-3 px-4 shadow-box-inset">
-          <the-mask
-            mask="+7(###)-###-##-##"
-            v-model="phone"
-            class="promo__input"
-            placeholder="+7(___)-___-__-__"
-          />
+          <client-only>
+            <the-mask
+              mask="+7(###)-###-##-##"
+              v-model="phone"
+              class="promo__input"
+              placeholder="+7(___)-___-__-__"
+            />
+          </client-only>
         </span>
       </label>
       <button class="promo__button" :class="[{'opacity-50': !name || this.phone.length !== 10}]" @click="sendMessage">
