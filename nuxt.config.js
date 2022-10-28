@@ -45,6 +45,14 @@ export default {
     '@nuxtjs/axios',
   ],
 
+  healthcheck: {
+    path: '/healthz',
+    contentType: 'application/json',
+    healthy: () => {
+      return JSON.stringify({ status: 200 })
+    }
+  },
+
   i18n: {
     locales: ['ru', 'kz'],
     defaultLocale: 'ru',
