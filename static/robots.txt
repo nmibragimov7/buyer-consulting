@@ -1,0 +1,3 @@
+User-agent: *
+Allow: *
+Sitemap: https://buyer-consulting.kz/sitemap.xml
