@@ -14,9 +14,13 @@
           <div v-for="(image, idx) of images"
                :key="idx"
                class="slider__block">
-            <img :src="image.url"
-                 :alt="image.title"
-                 class="h-14 hover:fill-red">
+            <a target="_blank"
+               :href="image.url"
+               class="w-full select-none">
+              <img :src="image.src"
+                   :alt="image.title"
+                   class="w-full h-14 hover:fill-red">
+            </a>
           </div>
         </agile>
       </client-only>
@@ -31,52 +35,49 @@ export default {
     return {
       images: [
         {
-          title: "michael-kors",
-          url: '/svg/michael-kors.svg'
-        },
-        {
           title: "nike",
-          url: '/svg/nike.svg'
+          src: '/svg/nike.svg',
+          url: 'https://www.nike.com/'
         },
         {
           title: "calvin-klein",
-          url: '/svg/calvin-klein.svg'
+          src: '/svg/calvin-klein.svg',
+          url: 'https://www.calvinklein.us/en'
         },
         {
           title: "adidas",
-          url: '/svg/adidas.svg'
+          src: '/svg/adidas.svg',
+          url: 'https://www.adidas.com/us'
         },
         {
-          title: "michael-kors",
-          url: '/svg/michael-kors.svg'
+          title: "gap",
+          src: '/svg/gap.svg',
+          url: 'https://www.gap.com/'
         },
         {
-          title: "nike",
-          url: '/svg/nike.svg'
+          title: "lacoste",
+          src: '/svg/lacoste.svg',
+          url: 'https://global.lacoste.com/'
         },
         {
-          title: "calvin-klein",
-          url: '/svg/calvin-klein.svg'
+          title: "reebok",
+          src: '/svg/reebok.svg',
+          url: 'https://www.reebok.com/us'
         },
         {
-          title: "adidas",
-          url: '/svg/adidas.svg'
+          title: "timberland",
+          src: '/svg/timberland.svg',
+          url: 'https://www.timberland.com/homepage.html'
         },
         {
-          title: "michael-kors",
-          url: '/svg/michael-kors.svg'
+          title: "coach",
+          src: '/svg/coach.svg',
+          url: 'https://www.coachoutlet.com/'
         },
         {
-          title: "nike",
-          url: '/svg/nike.svg'
-        },
-        {
-          title: "calvin-klein",
-          url: '/svg/calvin-klein.svg'
-        },
-        {
-          title: "adidas",
-          url: '/svg/adidas.svg'
+          title: "victoriassecret",
+          src: '/svg/victoriassecret.svg',
+          url: 'https://www.victoriassecret.com/us/'
         }
       ],
       innerWidth: 420

@@ -3,11 +3,10 @@ import kz from './locale/kz.json'
 
 export default {
   server: {
-    host: '0.0.0.0',
+    // host: '0.0.0.0',
     port: 8080
   },
 
-  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'buyer-consulting',
     htmlAttrs: {
@@ -16,7 +15,6 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
