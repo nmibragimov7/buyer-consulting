@@ -89,7 +89,19 @@ export default {
         },
         {
           property: 'og:site_name',
-          content: 'Заказывайте брендовые одежды напрямую из Америки и Европы!'
+          content: 'Брендовые одежды из Америки и Европы.'
+        },
+        {
+          property: 'og:description',
+          content: 'Заказывайте брендовые одежды из Америки и Европы из официальных интернет-магазинов.'
+        },
+        {
+          property: 'og:type',
+          content: 'article'
+        },
+        {
+          property: 'og:title',
+          content: 'Брендовые одежды из Америки и Европы (Nike, Adidas, Lacoste, Coach...).'
         }
       ]
     }
