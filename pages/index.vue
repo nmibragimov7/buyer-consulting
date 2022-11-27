@@ -35,12 +35,12 @@ export default {
   },
   head() {
     return {
-      title: "Заказ одежды из Америки и Европы",
+      title: "Купить кроссовки, кеды, ботинки, сумки и одежду от мировых брендов – Lacoste, Nike, Adidas, Calvin Klein, Gap, Reebok, Timberland, Coach, Victoria's Secret и др.",
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'Заказывайте брендовые одежды напрямую из Америки и Европы!'
+          content: 'Заказывайте кроссовки, кеды, ботинки, сумки и одежду от мировых брендов из Америки и Европы.'
         },
         {
           name: 'keywords',
