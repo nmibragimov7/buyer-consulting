@@ -1,5 +1,5 @@
 <template>
-  <div class="transition-all fixed top-0 right-0 bottom-0 bg-light-blue w-9/12 shadow-box-gray z-50 p-10"
+  <div class="transition-all fixed top-0 right-0 bottom-0 bg-light-gray-500 w-9/12 shadow-box-gray z-50 p-10"
        :class="[{'translate-x-full': !toggled}]">
     <img width="16"
          height="16"

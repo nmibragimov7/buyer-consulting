@@ -9,7 +9,7 @@
           :autoplay="true"
           :autoplay-speed="3000"
           :nav-buttons="false"
-          :slides-to-show="innerWidth < 768 ? 2 : 6"
+          :slides-to-show="innerWidth < 768 ? 2 : 4"
         >
           <div v-for="(image, idx) of images"
                :key="idx"
@@ -19,7 +19,7 @@
                class="w-full select-none">
               <img :src="image.src"
                    :alt="image.title"
-                   class="w-full h-14 hover:fill-red">
+                   class="w-full h-20 hover:fill-red">
             </a>
           </div>
         </agile>

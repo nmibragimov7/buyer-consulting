@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="max-w-4xl mx-auto text-center mb-8">
-      <h1 class="text-3xl md:text-5xl mb-2 font-semibold">Хватит переплачивать за одежду!</h1>
-      <h3 class="text-xl md:text-3xl text-gray">Заказывайте брендовые одежды напрямую из Америки и Европы!</h3>
+      <h1 class="text-3xl md:text-5xl mb-2 font-semibold">Не переплачивайте за одежду!</h1>
+      <h3 class="text-xl md:text-3xl text-gray">Заказывайте одежду от мировых брендов напрямую из Америки и Европы!</h3>
     </div>
     <div class="mb-[100px] md:mb-[200px]">
       <Promo/>
@@ -10,8 +10,11 @@
     <div class="mb-8">
       <Slider/>
     </div>
-    <div class="bg-light-blue py-10 md:py-14 mb-8">
+    <div class="bg-light-blue py-10 md:py-14">
       <Steps/>
+    </div>
+    <div class="bg-light-gray-500 py-10 md:py-14 mb-8">
+      <Call/>
     </div>
     <div v-show="axisY > 300"
          class="fixed bottom-8 right-4 md:right-8 p-2 rounded-[50%] shadow-box-dark cursor-pointer bg-white"
@@ -24,10 +27,11 @@
 import Promo from "../components/common/Promo";
 import Slider from "../components/common/Slider";
 import Steps from "../components/common/Steps";
+import Call from "../components/common/Call";
 
 export default {
   name: 'IndexPage',
-  components: {Steps, Slider, Promo},
+  components: {Call, Steps, Slider, Promo},
   data() {
     return {
       axisY: 0
