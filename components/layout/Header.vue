@@ -7,10 +7,10 @@
       <div class="flex items-start gap-8">
         <div class="hidden md:flex flex-col gap-2">
           <div class="layout__contacts layout__contacts--mail">
-            <span class="text-[10px]">kundyz.saparbay@gmail.com</span>
+            <a href="mailto:kundyz.saparbay@gmail.com" class="text-[10px]">kundyz.saparbay@gmail.com</a>
           </div>
           <div class="layout__contacts layout__contacts--phone">
-            <span class="text-[10px]">+7 707 442 77 40</span>
+            <a href="tel:+77074427740" class="text-[10px]">+7 707 442 77 40</a>
           </div>
         </div>
         <div class="layout__feedback" @click="toScroll">
